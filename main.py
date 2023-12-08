@@ -35,7 +35,7 @@ class Logo:
     p5.textFont(Font, 40)
     p5.text('About Me', 0, 250)
     p5.textFont(Font, 30)
-    p5.text('Click to start', 0, 560)
+    p5.text('Click to start', 0, 580)
     p5.pop()
 
 
