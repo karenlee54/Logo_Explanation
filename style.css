@@ -1,0 +1,36 @@
+html {
+  height: calc(100% - 175px);
+  display: table;
+  margin: auto;
+}
+body {
+  position: fixed;
+  background-color: #d2d2d2;
+  margin-top: 300px;
+  margin-left: -345px;
+  margin-right: auto;
+  margin-bottom: auto;
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: top;
+}
+/* py-terminal {
+  position: absolute;
+  left: 0px;
+  top: calc(100% - 175px);
+  width: calc(100%);
+  height: 175px;
+  overflow-y: auto;
+  scroll-behavior: auto;
+  background: black;
+} */
+py-terminal::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+py-terminal::-webkit-scrollbar-thumb {
+  background: #ffffff; 
+}
+py-terminal::-webkit-scrollbar {
+  width: 15px;
+}
