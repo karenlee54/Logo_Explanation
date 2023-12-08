@@ -32,9 +32,9 @@ class Logo:
     p5.imageMode(p5.CENTER)
     p5.image(self.img1, 0, 0, 300, 270)
     p5.textAlign(p5.CENTER)
-    p5.textFont(Font, 40)
+    p5.textFont(Font, 50)
     p5.text('About Me', 0, 550)
-    p5.textFont(Font, 15)
+    p5.textFont(Font, 30)
     p5.text('Click to start', 0, 1000)
     p5.pop()
 
@@ -209,7 +209,7 @@ def draw():
   if (program_state == 'PLAY'):
 
     p5.textAlign(p5.CORNER)
-    p5.textFont(Font, 25)
+    p5.textFont(Font, 50)
     p5.text('Click each of the symbols,', 25, 40)
     p5.text('it means...', 25, 80)
     
