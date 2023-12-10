@@ -21,7 +21,7 @@ point_list = [point]
 
 class Logo:
   x = 350
-  y = 460
+  y = 462
 
   def __init__(self):
     self.img1 = p5.loadImage('Logo/Logo.png')
@@ -33,9 +33,9 @@ class Logo:
     p5.image(self.img1, 0, 0, 300, 265)
     p5.textAlign(p5.CENTER)
     p5.textFont(Font, 40)
-    p5.text('About Me', 0, 215)
+    p5.text('About Me', 0, 217)
     p5.textFont(Font, 25)
-    p5.text('Click to start', 0, 520)
+    p5.text('Click to start', 0, 525)
     p5.pop()
 
 
