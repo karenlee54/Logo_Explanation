@@ -168,7 +168,7 @@ class Triangle_T(Triangle):
     p5.text('But we still can expand our ideas beyond the end!', 0, 555)
     p5.text('This is your place! Draw anything you want', 0, 590)
     p5.textFont('Helvetica', 25)
-    p5.text('△', 450, 590)
+    p5.text('△', 480, 590)
     p5.textFont(Font, 30)
     p5.text('+1 626.491.5982', 0, 950)
     p5.text('karenslee911@gmail.com', 0, 990)
@@ -205,7 +205,7 @@ def draw():
   if (program_state == 'PLAY'):
 
     p5.textAlign(p5.CORNER)
-    p5.textFont(Font, 40)
+    p5.textFont(Font, 30)
     p5.text('All symbols are inspired by the shapes from Korean traditional musical notes.', 25, 60)
     p5.text('Click each of the symbols to see their meaings in my branding...', 25, 115)
     
