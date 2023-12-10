@@ -137,8 +137,6 @@ class Triangle:
 
 class Triangle_T(Triangle):
   def draw(self):
-    p5.push()
-    p5.translate(self.x, self.y)
     
     if (program_state == 'END'):
       for i in range(len(point_list)):
@@ -149,6 +147,8 @@ class Triangle_T(Triangle):
         point = Point(x = p5.mouseX, y = p5.mouseY)
         point_list.append(point)
         
+    p5.push()
+    p5.translate(self.x, self.y)   
     p5.fill(255)
     p5.noStroke()
     p5.rect(-25, -30, 700, 1100)
@@ -159,7 +159,7 @@ class Triangle_T(Triangle):
     p5.fill(102, 103, 102)
     p5.textFont(Font, 30)
     p5.text('Graphic Designer', 210, 120)
-    p5.text('UI/UX Designer', 210, 165)
+    p5.text('UI/UX Designer', 210, 160)
     p5.textFont(Font, 35)
     p5.text('Triangle means END like a period', 0, 505)
     p5.textFont('Helvetica', 40)
