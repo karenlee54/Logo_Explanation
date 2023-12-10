@@ -177,7 +177,7 @@ class Triangle_T(Triangle):
         point_list.append(point)
 
     else:
-      p5.remove()
+      p5.removeAttribute()
 
 
 #print('Assignment #8 (Final Project Part B)')
@@ -204,7 +204,6 @@ def draw():
 
   if (program_state == 'START'):
     logo.draw()
-    triangle.update()
       
   if (program_state == 'PLAY'):
 
@@ -244,7 +243,6 @@ def draw():
       program_state = 'END'
 
     button.draw()
-    triangle.update()
 
   if (program_state == 'END'):
     p5.rectMode(p5.CENTER)
