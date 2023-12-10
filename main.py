@@ -250,7 +250,7 @@ def draw():
         point = point_list[i]
         point.draw()
 
-      if(p5.mouseIsPressed == True):
+    if(p5.mouseIsPressed == True):
         point = Point(x = p5.mouseX, y = p5.mouseY)
         point_list.append(point)
     
