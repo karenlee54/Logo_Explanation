@@ -168,7 +168,7 @@ class Triangle_T(Triangle):
     p5.text('But we can still expand our ideas beyond the end!', 0, 565)
     p5.text('This is your space! Feel free to draw anything you want', 0, 600)
     p5.textFont('Helvetica', 25)
-    p5.text('△', 650, 600)
+    p5.text('△', 610, 600)
     p5.fill(255)
     p5.noStroke()
     p5.rect(350, 1000, 700, 200)
