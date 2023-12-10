@@ -33,9 +33,9 @@ class Logo:
     p5.image(self.img1, 0, 0, 300, 270)
     p5.textAlign(p5.CENTER)
     p5.textFont(Font, 40)
-    p5.text('About Me', 0, 220)
-    p5.textFont(Font, 30)
-    p5.text('Click to start', 0, 450)
+    p5.text('About Me', 0, 200)
+    p5.textFont(Font, 20)
+    p5.text('Click to start', 0, 350)
     p5.pop()
 
 
