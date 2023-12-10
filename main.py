@@ -21,7 +21,7 @@ point_list = [point]
 
 class Logo:
   x = 350
-  y = 440
+  y = 465
 
   def __init__(self):
     self.img1 = p5.loadImage('Logo/Logo.png')
