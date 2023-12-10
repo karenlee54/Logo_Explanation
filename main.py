@@ -147,9 +147,9 @@ class Triangle_T(Triangle):
     p5.image(self.L, -5, -10, 198, 180)
     p5.textAlign(p5.LEFT)
     p5.fill(102, 103, 102)
-    p5.textFont(Font, 25)
-    p5.text('Graphic Designer', 210, 90)
-    p5.text('UI/UX Designer', 210, 110)
+    p5.textFont(Font, 40)
+    p5.text('Graphic Designer', 210, 110)
+    p5.text('UI/UX Designer', 210, 160)
     p5.textFont(Font, 20)
     p5.text('Triangle means end like a period', 0, 260)
     p5.textFont('Helvetica', 20)
@@ -159,10 +159,10 @@ class Triangle_T(Triangle):
     p5.text('This is your place ', 0, 322)
     p5.textFont('Helvetica', 15)
     p5.text('△', 118, 322)
-    p5.textFont(Font, 14)
-    p5.text('+1 626.491.5982', 0, 497)
-    p5.text('karenslee911@gmail.com', 0, 519)
-    p5.text('karenseoyounglee.com', 0, 1050) 
+    p5.textFont(Font, 30)
+    p5.text('+1 626.491.5982', 0, 920)
+    p5.text('karenslee911@gmail.com', 0, 950)
+    p5.text('karenseoyounglee.com', 0, 1000) 
     
     if (program_state == 'END'):
       for i in range(len(point_list)):
@@ -172,8 +172,9 @@ class Triangle_T(Triangle):
       if(p5.mouseIsPressed == True):
         point = Point(x = p5.mouseX, y = p5.mouseY)
         point_list.append(point)
-      else:
-        None
+
+    p5.fill(255)   
+    p5.rect(650, 150, 350, 1000)
     p5.pop()
 
 
