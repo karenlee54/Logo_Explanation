@@ -169,10 +169,21 @@ class Triangle_T(Triangle):
     p5.fill(255)
     p5.noStroke()
     p5.rect(350, 1000, 700, 150)
+    p5.fill(102, 103, 102)
     p5.textFont(Font, 30)
     p5.text('+1 626.491.5982', 0, 960)
     p5.text('karenslee911@gmail.com', 0, 1000)
     p5.text('karenseoyounglee.com', 0, 1040)
+
+    if (program_state == 'END'):
+      for i in range(len(point_list)):
+        point = point_list[i]
+        point.draw()
+
+      if(p5.mouseIsPressed == True):
+        point = Point(x = p5.mouseX, y = p5.mouseY)
+        point_list.append(point)
+       
         
     p5.pop()
 
