@@ -149,9 +149,9 @@ class Triangle_T(Triangle):
         
     p5.push()
     p5.translate(self.x, self.y)   
-    p5.fill(255)
-    p5.noStroke()
-    p5.rect(-25, -30, 700, 1100)
+    # p5.fill(255)
+    # p5.noStroke()
+    # p5.rect(-25, -30, 700, 1100)
     p5.imageMode(p5.CORNER)
     p5.image(self.E, 210, 0, 419.64, 45)
     p5.image(self.L, -5, -10, 198, 180)
@@ -168,10 +168,10 @@ class Triangle_T(Triangle):
     p5.text('But we still can expand our ideas beyond the end!', 0, 555)
     p5.text('This is your place! Draw anything you want', 0, 590)
     p5.textFont('Helvetica', 25)
-    p5.text('△', 400, 590)
+    p5.text('△', 450, 590)
     p5.textFont(Font, 30)
-    p5.text('+1 626.491.5982', 0, 930)
-    p5.text('karenslee911@gmail.com', 0, 980)
+    p5.text('+1 626.491.5982', 0, 950)
+    p5.text('karenslee911@gmail.com', 0, 990)
     p5.text('karenseoyounglee.com', 0, 1030)
         
     p5.pop()
@@ -206,8 +206,8 @@ def draw():
 
     p5.textAlign(p5.CORNER)
     p5.textFont(Font, 40)
-    p5.text('Click each of the symbols...', 25, 60)
-    p5.text('Each means...', 25, 115)
+    p5.text('All symbols are inspired by the shapes from Korean traditional musical notes.', 25, 60)
+    p5.text('Click each of the symbols to see their meaings in my branding...', 25, 115)
     
     #Karen
     if (p5.mouseX > 25) and (p5.mouseX < 180) and (p5.mouseY > 925) and (p5.mouseY < 1075):
@@ -222,7 +222,7 @@ def draw():
       seoyoung.draw()
       seoyoung.update()
     else:
-      seoyoung.x = 270
+      seoyoung.x = seoyoung.x
       seoyoung.y = 1000
 
     #Lee
@@ -230,7 +230,7 @@ def draw():
       lee.draw()
       lee.update()
     else:
-      lee.x = 435
+      lee.x = lee.x
       lee.y = 1000
 
     #Triangle
