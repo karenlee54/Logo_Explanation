@@ -139,6 +139,16 @@ class Triangle_T(Triangle):
   def draw(self):
     p5.push()
     p5.translate(self.x, self.y)
+    
+    if (program_state == 'END'):
+      for i in range(len(point_list)):
+        point = point_list[i]
+        point.draw()
+
+      if(p5.mouseIsPressed == True):
+        point = Point(x = p5.mouseX, y = p5.mouseY)
+        point_list.append(point)
+        
     p5.fill(255)
     p5.noStroke()
     p5.rect(-25, -30, 700, 1100)
@@ -151,27 +161,18 @@ class Triangle_T(Triangle):
     p5.text('Graphic Designer', 210, 120)
     p5.text('UI/UX Designer', 210, 165)
     p5.textFont(Font, 35)
-    p5.text('Triangle means END like a period', 0, 475)
+    p5.text('Triangle means END like a period', 0, 500)
     p5.textFont('Helvetica', 40)
-    p5.text('△', 525, 475)
+    p5.text('△', 525, 500)
     p5.textFont(Font, 27.5)
-    p5.text('But draw anything you want here!', 0, 525)
-    p5.text('This is your place ', 0, 545)
+    p5.text('But draw anything you want here!', 0, 550)
+    p5.text('This is your place ', 0, 580)
     p5.textFont('Helvetica', 35)
-    p5.text('△', 200, 545)
+    p5.text('△', 210, 580)
     p5.textFont(Font, 30)
     p5.text('+1 626.491.5982', 0, 930)
     p5.text('karenslee911@gmail.com', 0, 980)
-    p5.text('karenseoyounglee.com', 0, 1030) 
-    
-    # if (program_state == 'END'):
-    #   for i in range(len(point_list)):
-    #     point = point_list[i]
-    #     point.draw()
-
-    #   if(p5.mouseIsPressed == True):
-    #     point = Point(x = p5.mouseX, y = p5.mouseY)
-    #     point_list.append(point)
+    p5.text('karenseoyounglee.com', 0, 1030)
         
     p5.pop()
 
@@ -245,14 +246,6 @@ def draw():
     p5.rect(350, 550, 700, 110)
     p5.textAlign(p5.CORNER)
     triangle.draw()
-    
-    for i in range(len(point_list)):
-        point = point_list[i]
-        point.draw()
-
-    if(p5.mouseIsPressed == True):
-        point = Point(x = p5.mouseX, y = p5.mouseY)
-        point_list.append(point)
   
 
 # event function below need to be included,
