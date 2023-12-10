@@ -176,6 +176,9 @@ class Triangle_T(Triangle):
         point = Point(x = p5.mouseX, y = p5.mouseY)
         point_list.append(point)
 
+    else:
+      pass
+
 
 #print('Assignment #8 (Final Project Part B)')
 
@@ -247,8 +250,8 @@ def draw():
     p5.noStroke()
     p5.rect(350, 550, 700, 110)
     p5.textAlign(p5.CORNER)
-    triangle.update()
     triangle.draw()
+    triangle.update()
   
 
 # event function below need to be included,
