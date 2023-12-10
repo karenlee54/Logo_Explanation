@@ -199,10 +199,6 @@ def draw():
 
   global program_state, karen, seoyoung, lee
 
-  if (program_state == 'END'):
-    p5.textAlign(p5.CORNER)
-    triangle.draw()
-
   if (program_state == 'START'):
     logo.draw()
       
@@ -210,8 +206,8 @@ def draw():
 
     p5.textAlign(p5.CORNER)
     p5.textFont(Font, 40)
-    p5.text('Click each of the symbols...', 25, 55)
-    p5.text('Each means...', 25, 110)
+    p5.text('Click each of the symbols...', 25, 60)
+    p5.text('Each means...', 25, 115)
     
     #Karen
     if (p5.mouseX > 25) and (p5.mouseX < 180) and (p5.mouseY > 925) and (p5.mouseY < 1075):
@@ -242,6 +238,10 @@ def draw():
       program_state = 'END'
 
     button.draw()
+
+  if (program_state == 'END'):
+    p5.textAlign(p5.CORNER)
+    triangle.draw()
     
     # for i in range(len(point_list)):
     #   point = point_list[i]
