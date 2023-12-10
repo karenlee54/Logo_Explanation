@@ -147,22 +147,22 @@ class Triangle_T(Triangle):
     p5.image(self.L, -5, -10, 198, 180)
     p5.textAlign(p5.LEFT)
     p5.fill(102, 103, 102)
-    p5.textFont(Font, 35)
-    p5.text('Graphic Designer', 210, 110)
-    p5.text('UI/UX Designer', 210, 160)
-    p5.textFont(Font, 40)
-    p5.text('Triangle means END like a period', 0, 400)
-    p5.textFont('Helvetica', 40)
-    p5.text('△', 293, 400)
-    p5.textFont(Font, 35)
-    p5.text('But draw anything you want here!', 0, 450)
-    p5.text('This is your place ', 0, 450)
-    p5.textFont('Helvetica', 35)
-    p5.text('△', 118, 450)
     p5.textFont(Font, 30)
-    p5.text('+1 626.491.5982', 0, 950)
-    p5.text('karenslee911@gmail.com', 0, 1000)
-    p5.text('karenseoyounglee.com', 0, 1050) 
+    p5.text('Graphic Designer', 210, 120)
+    p5.text('UI/UX Designer', 210, 165)
+    p5.textFont(Font, 35)
+    p5.text('Triangle means END like a period', 0, 475)
+    p5.textFont('Helvetica', 40)
+    p5.text('△', 293, 475)
+    p5.textFont(Font, 35)
+    p5.text('But draw anything you want here!', 0, 510)
+    p5.text('This is your place ', 0, 510)
+    p5.textFont('Helvetica', 35)
+    p5.text('△', 118, 510)
+    p5.textFont(Font, 30)
+    p5.text('+1 626.491.5982', 0, 925)
+    p5.text('karenslee911@gmail.com', 0, 975)
+    p5.text('karenseoyounglee.com', 0, 1025) 
     
     if (program_state == 'END'):
       for i in range(len(point_list)):
@@ -172,9 +172,7 @@ class Triangle_T(Triangle):
       if(p5.mouseIsPressed == True):
         point = Point(x = p5.mouseX, y = p5.mouseY)
         point_list.append(point)
-
-    p5.fill(255)   
-    p5.rect(650, 150, 350, 1000)
+        
     p5.pop()
 
 
@@ -243,6 +241,8 @@ def draw():
   if (program_state == 'END'):
     p5.textAlign(p5.CORNER)
     triangle.draw()
+    p5.fill(255)   
+    p5.rect(650, 150, 350, 1000)
     
     # for i in range(len(point_list)):
     #   point = point_list[i]
