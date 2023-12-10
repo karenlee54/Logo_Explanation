@@ -220,7 +220,7 @@ def draw():
     p5.text('All symbols are inspired by the shapes from', 25, 50)
     p5.text('Korean traditional musical notes.', 25, 90)
     p5.text('Click each of the symbols to see', 25, 170)
-    p5.text('their meaings in my branding...', 25, 205)
+    p5.text('their meaings in my logo...', 25, 205)
     
     #Karen
     if (p5.mouseX > 25) and (p5.mouseX < 180) and (p5.mouseY > 925) and (p5.mouseY < 1075):
