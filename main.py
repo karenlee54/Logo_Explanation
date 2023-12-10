@@ -177,7 +177,7 @@ class Triangle_T(Triangle):
         point_list.append(point)
 
     else:
-      pass
+      None
 
 
 #print('Assignment #8 (Final Project Part B)')
