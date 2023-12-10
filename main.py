@@ -170,9 +170,9 @@ class Triangle_T(Triangle):
     p5.textFont('Helvetica', 25)
     p5.text('△', 480, 590)
     p5.textFont(Font, 30)
-    p5.text('+1 626.491.5982', 0, 950)
-    p5.text('karenslee911@gmail.com', 0, 990)
-    p5.text('karenseoyounglee.com', 0, 1030)
+    p5.text('+1 626.491.5982', 0, 960)
+    p5.text('karenslee911@gmail.com', 0, 1000)
+    p5.text('karenseoyounglee.com', 0, 1040)
         
     p5.pop()
 
@@ -206,10 +206,10 @@ def draw():
 
     p5.textAlign(p5.CORNER)
     p5.textFont(Font, 30)
-    p5.text('All symbols are inspired by the shapes', 25, 50)
-    p5.text('from Korean traditional musical notes.', 25, 90)
-    p5.text('Click each of the symbols', 25, 170)
-    p5.text('to see their meaings in my branding...', 25, 210)
+    p5.text('All symbols are inspired by the shapes from', 25, 50)
+    p5.text('Korean traditional musical notes.', 25, 90)
+    p5.text('Click each of the symbols to see', 25, 170)
+    p5.text('their meaings in my branding...', 25, 205)
     
     #Karen
     if (p5.mouseX > 25) and (p5.mouseX < 180) and (p5.mouseY > 925) and (p5.mouseY < 1075):
