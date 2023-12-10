@@ -209,9 +209,9 @@ def draw():
   if (program_state == 'PLAY'):
 
     p5.textAlign(p5.CORNER)
-    p5.textFont(Font, 40)
-    p5.text('Click each of the symbols,', 25, 50)
-    p5.text('it means...', 25, 100)
+    p5.textFont(Font, 30)
+    p5.text('Click each of the symbols,', 25, 55)
+    p5.text('it means...', 25, 110)
     
     #Karen
     if (p5.mouseX > 25) and (p5.mouseX < 180) and (p5.mouseY > 925) and (p5.mouseY < 1075):
