@@ -194,8 +194,8 @@ def setup():
 def draw():
   p5.background(255)   
   p5.fill(0)  
-  cursor_xy = (int(p5.mouseX), int(p5.mouseY))
-  p5.text(cursor_xy, 10, 20)  # cursor (x, y) 
+  # cursor_xy = (int(p5.mouseX), int(p5.mouseY))
+  # p5.text(cursor_xy, 10, 20)  # cursor (x, y) 
 
   global program_state, karen, seoyoung, lee
 
@@ -209,8 +209,8 @@ def draw():
   if (program_state == 'PLAY'):
 
     p5.textAlign(p5.CORNER)
-    p5.textFont(Font, 35)
-    p5.text('Click each of the symbols,', 25, 60)
+    p5.textFont(Font, 40)
+    p5.text('Click each of the symbols,', 25, 50)
     p5.text('it means...', 25, 100)
     
     #Karen
