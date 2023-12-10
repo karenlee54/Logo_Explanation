@@ -139,6 +139,19 @@ class Triangle_T(Triangle):
   def draw(self):   
     p5.push()
     p5.translate(self.x, self.y)   
+    
+    if (program_state == 'END'):
+      for i in range(len(point_list)):
+        point = point_list[i]
+        point.draw()
+
+      if(p5.mouseIsPressed == True):
+        point = Point(x = p5.mouseX, y = p5.mouseY)
+        point_list.append(point)
+
+    else:
+      p5.removeAttribute()
+      
     p5.imageMode(p5.CORNER)
     p5.image(self.E, 210, 0, 419.64, 45)
     p5.image(self.L, -5, -10, 198, 180)
@@ -158,26 +171,13 @@ class Triangle_T(Triangle):
     p5.text('△', 480, 600)
     p5.fill(255)
     p5.noStroke()
-    p5.rect(350, 1000, 700, 150)
+    p5.rect(350, 1000, 700, 200)
     p5.fill(102, 103, 102)
     p5.textFont(Font, 30)
     p5.text('+1 626.491.5982', 0, 960)
     p5.text('karenslee911@gmail.com', 0, 1000)
     p5.text('karenseoyounglee.com', 0, 1040)        
     p5.pop()
-  
-  def update(self):
-    if (program_state == 'END'):
-      for i in range(len(point_list)):
-        point = point_list[i]
-        point.draw()
-
-      if(p5.mouseIsPressed == True):
-        point = Point(x = p5.mouseX, y = p5.mouseY)
-        point_list.append(point)
-
-    else:
-      p5.removeAttribute()
 
 
 #print('Assignment #8 (Final Project Part B)')
@@ -209,7 +209,6 @@ def draw():
     p5.rect(350, 550, 700, 110)
     p5.textAlign(p5.CORNER)
     triangle.draw()
-    triangle.update()
 
   if (program_state == 'START'):
     logo.draw()
