@@ -153,12 +153,12 @@ class Triangle_T(Triangle):
     p5.textFont(Font, 35)
     p5.text('Triangle means END like a period', 0, 475)
     p5.textFont('Helvetica', 40)
-    p5.text('△', 515, 475)
+    p5.text('△', 520, 475)
     p5.textFont(Font, 27.5)
     p5.text('But draw anything you want here!', 0, 510)
     p5.text('This is your place ', 0, 540)
     p5.textFont('Helvetica', 35)
-    p5.text('△', 150, 540)
+    p5.text('△', 180, 540)
     p5.textFont(Font, 30)
     p5.text('+1 626.491.5982', 0, 925)
     p5.text('karenslee911@gmail.com', 0, 975)
@@ -197,6 +197,19 @@ def draw():
   # p5.text(cursor_xy, 10, 20)  # cursor (x, y) 
 
   global program_state, karen, seoyoung, lee
+
+  if (program_state == 'END'):
+    p5.textAlign(p5.CORNER)
+    triangle.draw()
+    p5.rectMode(p5.CENTER)
+    
+    for i in range(len(point_list)):
+        point = point_list[i]
+        point.draw()
+
+    if(p5.mouseIsPressed == True):
+        point = Point(x = p5.mouseX, y = p5.mouseY)
+        point_list.append(point)
 
   if (program_state == 'START'):
     logo.draw()
@@ -237,30 +250,7 @@ def draw():
       program_state = 'END'
 
     button.draw()
-
-  if (program_state == 'END'):
-    p5.textAlign(p5.CORNER)
-    triangle.draw()
-    p5.rectMode(p5.CENTER)
-    p5.fill(255)
-    p5.noStroke()
-    p5.rect(350, 1000, 650, 150)
-    
-    for i in range(len(point_list)):
-        point = point_list[i]
-        point.draw()
-
-    if(p5.mouseIsPressed == True):
-        point = Point(x = p5.mouseX, y = p5.mouseY)
-        point_list.append(point)
-    
-    # for i in range(len(point_list)):
-    #   point = point_list[i]
-    #   point.draw()
-
-    # if(p5.mouseIsPressed == True):
-    #   point = Point(x = p5.mouseX, y = p5.mouseY)
-    #   point_list.append(point)
+  
 
 # event function below need to be included,
 # even if they don't do anything
