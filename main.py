@@ -202,6 +202,15 @@ def draw():
 
   global program_state, karen, seoyoung, lee
 
+  if (program_state == 'END'):
+    p5.rectMode(p5.CENTER)
+    p5.fill(255)
+    p5.noStroke()
+    p5.rect(350, 550, 700, 110)
+    p5.textAlign(p5.CORNER)
+    triangle.draw()
+    triangle.update()
+
   if (program_state == 'START'):
     logo.draw()
       
@@ -243,15 +252,6 @@ def draw():
       program_state = 'END'
 
     button.draw()
-
-  if (program_state == 'END'):
-    p5.rectMode(p5.CENTER)
-    p5.fill(255)
-    p5.noStroke()
-    p5.rect(350, 550, 700, 110)
-    p5.textAlign(p5.CORNER)
-    triangle.draw()
-    triangle.update()
   
 
 # event function below need to be included,
